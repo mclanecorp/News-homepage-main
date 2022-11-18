@@ -1,0 +1,257 @@
+:root {
+  /* ### Primary */
+
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+
+  /* ### Neutral */
+
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%;);
+  --Darkgrayishblue: hsl(236, 13%, 42%);
+  --Verydarkblue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 200px;
+  font-family: Inter;
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  color: var(--Darkgrayishblue);
+}
+
+nav ul li a:hover {
+  color: var(--Softred);
+}
+section {
+  width: 100%;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+section .article img {
+  width: 640px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+section .article {
+  width: 69%;
+  display: flex;
+  flex-direction: column;
+}
+section .wrapper-text {
+  width: 640px;
+  display: flex;
+  flex-direction: row;
+}
+
+section .wrapper-text h1 {
+  width: 70%;
+  font-size: 48px;
+  font-weight: 800;
+  margin-right: 50px;
+}
+
+section .text {
+  width: 550px;
+  line-height: 25px;
+}
+
+section .text p {
+  margin-bottom: 30px;
+  color: var(--Darkgrayishblue);
+  font-weight: 400;
+}
+section .text a {
+  background-color: var(--Softred);
+  color: white;
+  padding: 10px 20px;
+}
+
+section .text a:hover {
+  background-color: var(--Verydarkblue);
+}
+
+section .news {
+  width: 350px;
+  background-color: var(--Verydarkblue);
+  color: white;
+  padding: 20px;
+}
+
+.news h2 {
+  color: var(--Softorange);
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.news h3 {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.news h3:hover {
+  color: var(--Softorange);
+}
+.news p {
+  font-weight: 400;
+  color: var(--Off-white);
+  line-height: 25px;
+}
+.news .first h3 {
+  color: var(--Off-white);
+}
+.news .first h3:hover {
+  color: var(--Softorange);
+}
+.news .second {
+  margin-top: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--Off-white);
+  border-top: 1px solid var(--Off-white);
+}
+
+.news .third {
+  margin-top: 30px;
+}
+
+.wrapper-footer {
+  display: flex;
+}
+.wrapper-footer img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.wrapper-footer h2 {
+  color: var(--Darkgrayishblue);
+  margin-bottom: 10px;
+}
+
+.wrapper-footer h3 {
+  /* cursor: pointer; */
+  color: black;
+}
+
+.wrapper-footer h3:hover {
+  color: var(--Softred);
+}
+
+.wrapper-footer p {
+  color: var(--Darkgrayishblue);
+  margin-top: 10px;
+}
+
+.first-foot {
+  width: 320px;
+  display: flex;
+  margin-right: 30px;
+}
+
+.second-foot {
+  width: 350px;
+  display: flex;
+  margin-right: 30px;
+}
+.hamburger {
+  display: none;
+}
+.close {
+  display: none;
+  z-index: 999;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  section {
+    flex-direction: column;
+  }
+  section .article img {
+    width: 350px;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+  section .wrapper-text {
+    width: 355px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  section .text {
+    width: 320px;
+  }
+  section .news {
+    margin-top: 30px;
+  }
+  .wrapper-footer {
+    flex-direction: column;
+    /* margin-left: -90px; */
+    /* margin-top: -30px; */
+  }
+  footer {
+    margin: 0 auto;
+  }
+  #nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: var(--Off-white);
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 150px;
+    justify-content: center;
+  }
+  nav ul li {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  nav ul li a {
+    color: black;
+    font-weight: 700;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .second-foot {
+    width: 320px;
+  }
+}

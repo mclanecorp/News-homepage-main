@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>News homepage</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" aria-hidden="true" />
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trendings</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+      <img src="./images/icon-menu.svg" alt="menu" class="hamburger">
+      <img src="./images/icon-menu-close.svg" alt="close menu" class="close">
+    </header>
+    <section>
+      <div class="article">
+        <img src="./images/image-web-3-desktop.jpg" alt="" aria-hidden="true" />
+        <div class="wrapper-text">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="text">
+            <p>
+              We dive the next evolution of the web that claims ti put the power
+              of the platform back into the hands of the people But is it really
+              fullfilling its promise?
+            </p>
+            <a href="#">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="news">
+        <div class="first">
+          <h2>New</h2>
+          <a href="#"><h3>Hydrogen vs electric Cars</h3></a>
+          <p>Will hydrogen-fueled cars ever catch up to EV's?</p>
+        </div>
+        <div class="second">
+          <a href="#"></a><h3>The Downsides of AI Artistry</h3></a>
+          <p>Will hydrogen-fueled cars ever catch up to EV's?</p>
+        </div>
+        <div class="third">
+          <a href="#"></a><h3>Is VC Funding Drying Up?</h3></a>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper-footer">
+        <div class="first-foot">
+          <div class="img-foot">
+            <img src="./images/image-retro-pcs.jpg" alt="" aria-hidden="true" />
+          </div>
+          <div class="text-foot">
+            <h2>01</h2>
+            <a href="#"><h3>Reviving Retro PCs</h3></a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="first-foot">
+          <div class="img-foot">
+            <img
+              src="./images/image-top-laptops.jpg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="text-foot">
+            <h2>02</h2>
+            <a href="#"><h3>Top 10 laptops of 2022</h3></a>
+            <p>Our best picks for various needs and budgets</p>
+          </div>
+        </div>
+        <div class="second-foot">
+          <div class="img-foot">
+            <img
+              src="./images/image-gaming-growth.jpg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="text-foot">
+            <h2>03</h2>
+            <a href="#"><h3>The Growth of Gaming</h3></a>
+            <p>How the pandemic has sparked frst opportunities</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.getElementById("nav");
+      const close = document.querySelector(".close")
+      hamburger.addEventListener("click", () => {
+        nav.style.display=("block");
+        close.style.display=("block");
+      })
+      close.addEventListener("click", () => {
+        nav.style.display=("none");
+        close.style.display=("none");
+      })
+      
+    </script>
+  </body>
+</html>
